@@ -1,0 +1,13 @@
+.collectionpage{
+  width: 100%; 
+  display: flex;
+  column-gap: 50px;  
+}
+
+@media(max-width:600px){
+  .collectionpage{
+    display: flex;
+    flex-direction: column;
+  }
+}
+

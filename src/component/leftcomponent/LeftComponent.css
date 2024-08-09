@@ -1,0 +1,127 @@
+
+.leftcomponent{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  row-gap: 15px;
+}
+
+.leftcomponent h5{
+  text-transform: uppercase;
+  color: hsl(219, 9%, 45%);
+  font-size: 15px;
+}
+
+.leftcomponent h1{
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+.leftcomponent p{
+  color: hsl(219, 9%, 45%);  
+  text-transform: capitalize;
+  line-height: 28px;
+}
+
+.allprice{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.price{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.fristprice{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.secondprice{
+  width: 45px;
+  height: 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricelabel{
+  color: hsl(219, 9%, 45%); 
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.box{
+  display: flex; 
+  align-items: center;
+  column-gap: 20px;
+  margin-top: 20px;
+}
+
+.rightbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 130px;
+  height: 35px;
+  border-radius: 7px;
+  background-color: hsl(223, 64%, 98%);
+}
+
+.rightbox button{
+  all: unset;
+  cursor: pointer;
+}
+
+.rightbox label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.leftbox{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  column-gap: 15px;
+  background-color: hsl(26, 100%, 55%) ;
+  width: 200px;
+  height: 40px;
+  border-radius: 9px;
+  color: hsl(220, 13%, 13%);
+  
+}
+
+.leftbox >label{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+@media(max-width:600px){
+  .box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .leftcomponent p{
+    font-size: 15px;
+  }
+  .allprice{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+  }
+  .rightbox{
+    width: 400px;
+  }
+  .leftbox{
+    width: 400px;
+  }
+}
